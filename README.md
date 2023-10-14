@@ -25,13 +25,16 @@ The Contact Saver Java program allows you to input contact information, includin
 Compile the Java program using the javac command. Make sure you're in the directory where ContactSaver.java is located.
 
 
-```javac ContactSaver.java```
+```
+javac ContactSaver.java
+```
 After successful compilation, a ContactSaver.class file will be generated.
 
 To run the Contact Saver program, use the following command:
 
-
-```java ContactSaver```
+```
+java ContactSaver
+```
 The program will prompt you to enter the contact details, including name, email, and phone number.
 
 The program will save the contact details to a file named contacts.txt. You can modify the file name and path in the ContactSaver.java source code.
@@ -69,3 +72,8 @@ java -jar ContactSaver.jar
 This executable JAR file allows you to run the program on different systems without the need for recompilation.
 
 Enjoy using the Contact Saver Java program! 📞
+
+# Contact
+Author : Jenin Sutradhar
+Email : jeninsutradhar@gmail.com
+Website : vlist.free.nf
