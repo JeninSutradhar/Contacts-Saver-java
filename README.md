@@ -3,77 +3,43 @@
 [![Java](https://img.shields.io/badge/Java-Contact%20Saver-blue)](https://www.java.com/)
 [![GitHub license](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
-## 📝 Introduction
+## 📝 Overview
+ContactSaver is a Java program designed to help users save and manage their contact information conveniently. It provides a simple interface for adding, fetching, viewing, and deleting contacts.
 
-The Contact Saver Java program allows you to input contact information, including name, email, and phone number, and saves it to a text file for future reference. This README will guide you through using the program and also provide instructions on how to convert the Java program into an executable JAR (Java Archive) file.
+## Features
+- **Add Contact:** Easily add new contacts with their name, email, and phone number.
+- **Fetch Contact:** Retrieve contact details by providing the contact's ID number.
+- **View All Contacts:** View all saved contacts at once.
+- **Delete Contact:** Remove a contact by specifying its ID number.
+- **Data Persistence:** Contact information is saved to a file (contacts.txt) for future reference.
 
-## 📂 Files Included
+## Usage
+1. Run the ContactSaver program.
+2.  Follow the on-screen instructions:
+- Choose an option from the menu:
+- Enter 1 to fetch contact information by ID.
+- Enter 2 to add a new contact.
+- Enter 3 to view all contacts.
+- Enter 4 to delete a contact by ID.
+- Enter 5 to exit the program.
+3. Input the required information as prompted.
+4. Enjoy the convenience of managing your contacts!
 
-1. **Contacts.txt**: A sample text file that will store contact information in the format:
-   ```plaintext
-   Name: John Doe
-   Email: john.doe@example.com
-   Phone Number: 123-456-7890
-   ```
-   
-1. ContactSaver.class: The compiled Java class file.
-2. ContactSaver.java: The source code for the Contact Saver program.
-3. manifest.txt: A manifest file needed for creating an executable JAR file.
-4. ContactSaver.java: The source code for the Contact Saver program.
-
-# 🚀 How to Use the Contact Saver Program
-Compile the Java program using the javac command. Make sure you're in the directory where ContactSaver.java is located.
-
-
-```
+### How to Run
+- Compile the ContactSaver.java file and run the compiled class file.
+```bash
 javac ContactSaver.java
-```
-After successful compilation, a ContactSaver.class file will be generated.
-
-To run the Contact Saver program, use the following command:
-
-```
 java ContactSaver
 ```
-The program will prompt you to enter the contact details, including name, email, and phone number.
+- or directly `run|debug` on Visual studio code
 
-The program will save the contact details to a file named contacts.txt. You can modify the file name and path in the ContactSaver.java source code.
-
-If the contact is saved successfully, you'll see a message: "Contact saved successfully!"
-
-If an error occurs during the saving process, you'll see an error message.
-
-# 💼 Converting the Program into an Executable JAR
-To convert the Java program into an executable JAR file that you can easily share and distribute to other computers with Java installed, follow these steps:
-
-Save the Java program with a .java extension (e.g., ContactSaver.java).
-
-Open a command prompt or terminal and navigate to the directory where the Java program is saved.
-
-Compile the Java program using the javac command (as explained above).
-
-After successful compilation, a ContactSaver.class file will be generated.
-
-Create a manifest file (e.g., manifest.txt) and add the following line to it:
-
+## File Structure
+```bash
+.
+├── ContactSaver.class         (Compiled Java class)
+├── ContactSaver.jar           (Executable JAR file)
+├── ContactSaver.java          (Source code)
+├── README.md                  (Documentation)
+├── contacts.txt               (Saved contact information)
+└── manifest.txt               (Manifest file for JAR packaging)
 ```
-Main-Class: ContactSaver
-```
-Create a JAR file using the jar command with the manifest file and the class file:
-
-```
-jar cfm ContactSaver.jar manifest.txt ContactSaver.class
-```
-You can now execute the program using the java command with the JAR file:
-
-```
-java -jar ContactSaver.jar
-```
-This executable JAR file allows you to run the program on different systems without the need for recompilation.
-
-Enjoy using the Contact Saver Java program! 📞
-
-# Contact
-Author : Jenin Sutradhar
-Email : jeninsutradhar@gmail.com
-Website : vlist.free.nf
